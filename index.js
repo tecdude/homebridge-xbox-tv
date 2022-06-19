@@ -220,6 +220,7 @@ class xboxTvDevice {
 		this.mqttAuth = config.mqttAuth || false;
 		this.mqttUser = config.mqttUser;
 		this.mqttPasswd = config.mqttPasswd;
+		this.accesoryType = config.accessoryType;
 		this.mqttDebug = config.mqttDebug || false;
 
 		//add configured inputs to the default inputs
