@@ -717,7 +717,7 @@ class xboxTvDevice {
 		this.log.debug('prepareAccessory');
 		const accessoryName = this.name;
 		const accessoryUUID = UUID.generate(this.xboxLiveId);
-		const accessoryCategory = Categories.TV_SET_TOP_BOX;
+		const accessoryCategory = Categories.this.accessoryType;
 		const accessory = new Accessory(accessoryName, accessoryUUID, accessoryCategory);
 		accessory.context.device = this.config.device;
 
