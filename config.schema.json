@@ -135,13 +135,13 @@
 							"oneOf": [{
 									"title": "Set Top Box",
 									"enum": [
-										TV_SET_TOP_BOX
+										"TV_SET_TOP_BOX"
 									]
 								},
 								{
 									"title": "Television",
 									"enum": [
-										TELEVISION
+										"TELEVISION"
 									]
 								}
 							],
