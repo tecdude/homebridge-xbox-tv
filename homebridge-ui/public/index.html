@@ -167,12 +167,12 @@
               document.getElementById('startAuthorizationButton').innerText = "Activate console";
               document.getElementById('info').innerHTML =
                 'Web Api Token saved, now please press *Activate Console*.';
-              homebridge.toast.info('Web api token saved.', 'Info!');
+              homebridge.toast.info('Web API token saved.', 'Info!');
               this.authorizeConsole = false;
             } else {
               document.getElementById('authorizeConsoleButton').innerText = "Save Web Api Token";
               document.getElementById('info').innerHTML =
-                'Now go to the pop-up window and login to Your Xbox Live account and accept permission to allow Homebridge-Smartglass, next copy the part after *?code=* from the response URI and paste it in to the *Web Api Token*, next press the *Save Web Api Token*.';
+                'Now go to the pop-up window and login to Your Xbox Live account and accept permission to allow Homebridge-Smartglass, next copy the part after *?code=* from the response URI and paste it in to the *Web API Token*, next press the *Save Web API Token*.';
               await open(info);
               homebridge.toast.info('Authorization page requested!', 'Info!');
               this.authorizeConsole = true;
@@ -186,7 +186,7 @@
           document.getElementById('authorizeConsoleButton').setAttribute('disabled', 'disabled');
           document.getElementById('authorizeConsoleButton').innerText = "Authorize console";
           document.getElementById('info').innerHTML =
-            'Activation console done, Token in file saved successful. Now enable *Web Api Control* in config menu, save and restart the plugin and have fun!!!';
+            'The console has been authorised, the Token was saved sucessfully. Now enable *Web API Control* in config menu, save and restart the plugin and have fun!!!';
           homebridge.toast.success(info, 'Success!');
         };
 
