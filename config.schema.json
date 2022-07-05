@@ -125,28 +125,6 @@
 							],
 							"required": true
 						},
-						"accesoryType": {
-							"title": "Accessory Type",
-							"type": "integer",
-							"minimum": 0,
-							"maximum": 1,
-							"default": 0,
-							"description": "Select how you want the Xbox to appear in HomeKit",
-							"oneOf": [{
-									"title": "Set Top Box",
-									"enum": [
-										"TV_SET_TOP_BOX"
-									]
-								},
-								{
-									"title": "Television",
-									"enum": [
-										"TELEVISION"
-									]
-								}
-							],
-							"required": true
-						},
 						"infoButtonCommand": {
 							"title": "Info Button",
 							"type": "string",
